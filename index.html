@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangalore Weather</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-card">
+            <div class="location">
+                <h1>Bangalore, India</h1>
+                <div class="date-time">
+                    <span id="date"></span>
+                    <span id="time"></span>
+                </div>
+            </div>
+            
+            <div class="weather-info">
+                <div class="temperature">
+                    <span id="temp">--</span>°C
+                </div>
+                <div class="weather-description">
+                    <i id="weather-icon" class="fas fa-cloud"></i>
+                    <span id="description">Loading...</span>
+                </div>
+            </div>
+
+            <div class="weather-details">
+                <div class="detail">
+                    <i class="fas fa-wind"></i>
+                    <span id="wind">-- km/h</span>
+                </div>
+                <div class="detail">
+                    <i class="fas fa-tint"></i>
+                    <span id="humidity">--%</span>
+                </div>
+                <div class="detail">
+                    <i class="fas fa-compress-arrows-alt"></i>
+                    <span id="pressure">-- hPa</span>
+                </div>
+            </div>
+
+            <div class="forecast">
+                <h2>5-Day Forecast</h2>
+                <div id="forecast-container" class="forecast-container">
+                    <!-- Forecast items will be added here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
